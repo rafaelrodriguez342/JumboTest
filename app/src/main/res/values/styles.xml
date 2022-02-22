@@ -1,0 +1,37 @@
+<resources>
+
+    <style name="jumboTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/josefinsans_regular</item>
+    </style>
+
+    <style name="primaryButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:fontFamily">@font/josefinsans_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="mainTitleTextView" parent="jumboTextView">
+        <item name="android:textColor">@color/jumbo_yellow</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="priceLabelTextView" parent="jumboTextView">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="labelTextView" parent="jumboTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MainLabelTextView" parent="mainTitleTextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

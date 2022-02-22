@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_title_margin">30dp</dimen>
+    <dimen name="end_counter_margin">2dp</dimen>
+    <dimen name="title_separator_height">3dp</dimen>
+    <dimen name="end_content_margin">10dp</dimen>
+    <dimen name="detail_image_height_size">300dp</dimen>
+    <dimen name="list_image_height_size">100dp</dimen>
+    <dimen name="list_image_margin">20dp</dimen>
+    <dimen name="list_text_start_margin">10dp</dimen>
+    <dimen name="list_text_top_margin">20dp</dimen>
+    <dimen name="list_name_end_margin">10dp</dimen>
+    <dimen name="list_margin_bottom">20dp</dimen>
+    <dimen name="list_content_end_margin">10dp</dimen>
+    <dimen name="list_quantity_vertical_margin">5dp</dimen>
+    <dimen name="list_quantity_end_margin">20dp</dimen>
+    <dimen name="list_currency_start_margin">5dp</dimen>
+</resources>

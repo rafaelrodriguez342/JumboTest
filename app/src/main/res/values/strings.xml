@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JumboTest</string>
+    <string name="server_error">There is an error right now, please contact customer services if problem persist</string>
+    <string name="network_error">Please check your internet connection</string>
+    <string name="cache_error">Sorry there is an error, please try with internet connection</string>
+    <string name="available_label">Available</string>
+    <string name="not_available_label">Not Available</string>
+    <string name="detail_price_template">%1$s %2$s</string>
+    <string name="welcome_to_jumbo">Welcome to Jumbo!</string>
+    <string name="start">Start</string>
+    <string name="open_cart">Open Cart!</string>
+    <string name="check_below_your_selected_products">Check below your selected products</string>
+</resources>

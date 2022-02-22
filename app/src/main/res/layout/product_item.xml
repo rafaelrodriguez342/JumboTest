@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/list_margin_bottom">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="@dimen/list_image_height_size"
+        android:layout_height="@dimen/list_image_height_size"
+        android:layout_marginStart="@dimen/list_image_margin"
+        android:layout_marginTop="@dimen/list_text_top_margin"
+        android:layout_marginBottom="@dimen/list_image_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_text_start_margin"
+        android:layout_marginTop="@dimen/list_text_top_margin"
+        android:layout_marginEnd="@dimen/list_name_end_margin"
+        style="@style/labelTextView"
+        app:layout_constraintEnd_toStartOf="@id/increaseProductInCart"
+        app:layout_constraintStart_toEndOf="@id/productImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        style="@style/priceLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_text_start_margin"
+        app:layout_constraintStart_toEndOf="@id/productImage"
+        app:layout_constraintTop_toBottomOf="@id/productName"
+        tools:text="233" />
+
+    <TextView
+        android:id="@+id/productCurrency"
+        style="@style/priceLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/list_currency_start_margin"
+        app:layout_constraintStart_toEndOf="@id/productPrice"
+        app:layout_constraintTop_toBottomOf="@id/productName"
+        tools:text="EUR" />
+
+    <ImageView
+        android:id="@+id/increaseProductInCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_text_top_margin"
+        android:layout_marginEnd="@dimen/list_content_end_margin"
+        android:src="@drawable/ic_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_quantity_vertical_margin"
+        android:layout_marginEnd="@dimen/list_quantity_end_margin"
+        style="@style/MainLabelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/increaseProductInCart"
+        tools:text="1" />
+
+    <ImageView
+        android:id="@+id/decreaseProductInCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_quantity_vertical_margin"
+        android:layout_marginEnd="@dimen/list_content_end_margin"
+        android:src="@drawable/ic_remove_cart"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantityLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

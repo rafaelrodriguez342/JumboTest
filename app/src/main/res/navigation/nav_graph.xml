@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productListFragment">
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.jumbotest.ui.fragments.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_carProductsFragment"
+            app:destination="@id/carProductsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/carProductsFragment"
+        android:name="com.example.jumbotest.ui.fragments.CartProductsFragment"
+        android:label="fragment_car_products"
+        tools:layout="@layout/fragment_cart_products" />
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.example.jumbotest.ui.fragments.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" />
+</navigation>
